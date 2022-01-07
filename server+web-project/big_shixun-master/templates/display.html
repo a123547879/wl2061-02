@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/show.css">
+    <script src="../static/js/echarts.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="echart4" class="large" style="width:100%;height:800px"></div>
+    </div>
+    <script>
+
+
+        var myChart4 = echarts.init(document.getElementById('echart4'));
+        const option4 = {
+    title: {
+        text: '光照',
+        textStyle:{
+            color:'#fff',
+        }
+      },
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'cross',
+        }
+      },
+      legend: {
+        data: [],
+      },
+      toolbox: {
+        feature: {
+          saveAsImage: {}
+        }
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: [
+        {
+          type: 'category',
+          boundaryGap: false,
+          data: [],
+
+        }
+      ],
+      yAxis: [
+        {
+          type: 'value',
+          color:'#fff',
+          textStyle:{
+            color:'#fff',
+        }
+        }
+      ],
+      series: [
+        {
+          name: '光照',
+          type: 'line',
+          stack: 'Total',
+          smooth:true,
+          emphasis: {
+            focus: 'series'
+          },
+          data: []
+        }
+      ]
+};
+myChart4.setOption(option4);
+var LightData=[]
+let i = 0;
+setInterval(function () {
+var LValue='{{ u[0][0] }}'
+i++;
+var data='{{ u }}';
+console.log(data)
+console.log(LValue)
+console.log(LightData)
+
+var random=Math.round(Math.random()*10);
+
+if(LightData.length=8){
+    LightData.shift()
+    LightData.push(50+random)
+}else{
+    LightData.push(50+random)
+}
+myChart4.setOption({
+      series: [{
+        data:LightData
+      }]
+});
+},2000);
+    </script>
+</body>

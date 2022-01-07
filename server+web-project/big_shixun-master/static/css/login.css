@@ -1,0 +1,24 @@
+*{
+padding:0;
+text-align:center;
+}
+body{
+    background-image:url('../images/bg.jpg')
+}
+.Body{
+width:400px;
+height:300px;
+border-radius:20px;
+margin:0 auto;
+background-color: skyblue;
+margin-top:200px;
+padding-top: 50px;
+}
+form{
+display:block;  
+margin:0 auto;
+}
+button{
+width:200px;
+height:50px;
+}

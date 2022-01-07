@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    width: 100%;
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+#app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.outbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.boxes{
+    width: 25%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align: center;
+    margin: 2rem 0;
+}
+header{
+    width: 100%;
+    height: 4rem;
+    background-color: red;
+    text-align: center;
+}
+article{
+    width: 100%;
+    height: 12rem;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 4rem;
+    background-color: skyblue;
+    text-align: center;
+}
+.different{
+    background-color:yellow;
+}
+.bk{
+    background-color: yellow;
+}
+ul{
+    list-style-type: none;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+ul li{
+    border: 1px solid tomato;
+    width: 50px;
+    text-align: center;
+    line-height: 30px;
+}

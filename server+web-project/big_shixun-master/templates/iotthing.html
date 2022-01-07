@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <table class="table table-bordered">
+  <tr>
+    <th>name</th>
+       <th>value</th>
+       <th>time</th>
+
+  </tr>
+          {% for i in u %}
+      <tr>
+           <!--<td>{{ u[0]}}</td>-->
+            <!--<td>{{ u[0][0]}}</td>-->
+          <!--<td>{{ u[0][1]}}</td>-->
+          <td>{{ i[0] }}</td>
+          <td id="value">{{ i[1] }}</td>
+          <td>{{ i[2] }}</td>
+          <td>{{ i[3] }}</td>
+
+      </tr>
+    {% endfor %}
+  </table>
+
+</body>
+<script>
+    var datas='{{ u[2][1] }}';
+    console.log(datas);
+</script>
+</html>
