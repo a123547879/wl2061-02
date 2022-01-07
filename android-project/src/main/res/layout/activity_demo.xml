@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_demo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="快速接入示例（灯）"-->
+    <!--android:gravity="center"-->
+    <!--android:onClick="startLightExample"-->
+    <!--android:background="@drawable/normalbutton_background"-->
+    <!--android:textColor="@drawable/normalbutton_textcolor"/>-->
+    <TextView
+        android:id="@+id/id_error_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/normalbutton_background"
+        android:gravity="center_vertical"
+        android:textColor="@color/red"
+        android:textSize="40dp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/LightText"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/normalbutton_background"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/red"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/PText"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/normalbutton_background"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/red"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/HText"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/normalbutton_background"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/red"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/TText"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/normalbutton_background"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/red"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/startService"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="startService"
+        android:textAlignment="center"
+        />
+</LinearLayout>
